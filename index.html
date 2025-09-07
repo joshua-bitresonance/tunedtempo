@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuned Tempo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header Section -->
+    <header class="bg-black text-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex-shrink-0">
+                 <img src="https://placehold.co/60x60/ff0000/ffffff?text=TT" alt="Tuned Tempo Logo" class="h-12 w-12 rounded-full">
+            </div>
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex flex-grow justify-center">
+                <a href="#" class="px-4 py-2 hover:text-red-500 transition duration-300">Home</a>
+                <a href="#" class="px-4 py-2 hover:text-red-500 transition duration-300">Videos</a>
+                <a href="#" class="px-4 py-2 hover:text-red-500 transition duration-300">Music</a>
+                <a href="#" class="px-4 py-2 hover:text-red-500 transition duration-300">About</a>
+            </nav>
+            <!-- Search Icon -->
+            <div class="flex-shrink-0">
+                <i class="fas fa-search h-6 w-6"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+        <!-- Featured Video Section -->
+        <section class="bg-white rounded-lg shadow-lg p-8 mb-12">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+                <div class="text-center lg:text-left">
+                    <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Featured Video: <br>GTI Anthem</h1>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="inline-block bg-red-600 text-white font-semibold py-3 px-8 rounded-lg hover:bg-red-700 transition duration-300">
+                        WATCH NOW ON YOUTUBE
+                    </a>
+                </div>
+                <div class="aspect-w-16 aspect-h-9 lg:col-span-2">
+                    <iframe class="w-full h-full rounded-lg shadow-2xl" src="https://www.youtube.com/embed/E3b_y5b00iE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest Uploads Section -->
+        <section>
+            <h2 class="text-3xl font-bold text-gray-800 mb-8">Latest Uploads</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+                <!-- Video Card 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                    <img src="https://placehold.co/600x400/000000/FFFFFF?text=GTI+Exhaust+Mod" alt="GTI Exhaust Mod" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-semibold text-lg">GTI Exhaust Mod</h3>
+                    </div>
+                </div>
+                <!-- Video Card 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                    <img src="https://placehold.co/600x400/000000/FFFFFF?text=F1+Season" alt="F1 Season: Music GTI Inspired" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-semibold text-lg">F1 Season: Music GTI Inspired</h3>
+                    </div>
+                </div>
+                <!-- Video Card 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                    <img src="https://placehold.co/600x400/000000/FFFFFF?text=Ultimate+Playlist" alt="Building The Ultimate Playlist" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-semibold text-lg">Building The Ultimate Playlist</h3>
+                    </div>
+                </div>
+                <!-- Video Card 4 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                    <img src="https://placehold.co/600x400/000000/FFFFFF?text=Drums+Turbo" alt="Drums+Turbo=Yesss" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-semibold text-lg">Drums+Turbo=Yesss</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-black text-white mt-12">
+        <div class="container mx-auto px-4 py-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center text-center md:text-left">
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-bold text-lg mb-2">Quick Links</h4>
+                    <p>Video: <a href="#" class="hover:text-red-500 underline">GTI Exhaust Mod</a></p>
+                </div>
+                <!-- Copyright -->
+                <div class="text-center">
+                    <p>&copy; 2024 TUNED TEMPO. ALL TURKITS RESERVED.</p>
+                </div>
+                <!-- Social Media Icons -->
+                <div class="flex justify-center md:justify-end space-x-4">
+                    <a href="#" class="hover:text-red-500 transition duration-300"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="#" class="hover:text-red-500 transition duration-300"><i class="fab fa-tiktok fa-lg"></i></a>
+                    <a href="#" class="hover:text-red-500 transition duration-300"><i class="fab fa-youtube fa-lg"></i></a>
+                    <a href="#" class="hover:text-red-500 transition duration-300"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="#" class="hover:text-red-500 transition duration-300"><i class="fab fa-discord fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+
