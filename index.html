@@ -12,7 +12,7 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f3f4f6;
+            background-color: #f3f4f6; /* bg-gray-100 */
         }
     </style>
 </head>
@@ -23,7 +23,8 @@
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
             <!-- Logo -->
             <div class="flex-shrink-0">
-                 <img src="logo_nobg.png" alt="Tuned Tempo Logo" class="h-12 w-12 rounded-full">
+                 <!-- Changed to a placeholder for functionality -->
+                 <img src="logo_nobg.png" alt="Tuned Tempo Logo" class="h-16 w-16 rounded-full" onerror="this.onerror=null;this.src='https://placehold.co/64x64/ef4444/ffffff?text=Error';">
             </div>
             <!-- Navigation Links -->
             <nav class="hidden md:flex flex-grow justify-center">
@@ -40,60 +41,68 @@
     </header>
 
     <!-- Main Content -->
-    <main class="container mx-auto px-4 py-12">
-        <!-- Featured Video Section -->
-        <section class="bg-white rounded-lg shadow-lg p-8 mb-12">
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
-                <div class="text-center lg:text-left">
-                    <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Featured Video: <br>GTI Anthem</h1>
+    <main>
+        <!-- Featured Video Section - Restructured for a video-first experience -->
+        <section class="w-full bg-black text-white py-20 md:py-32">
+            <div class="container mx-auto px-4">
+                <!-- Video is now the primary element. The max-w-4xl class has been removed to allow it to fill the container. -->
+                <div class="mx-auto mb-8">
+                    <div class="aspect-w-4 aspect-h-3">
+                        <iframe class="w-full h-full rounded-lg shadow-2xl" src="https://www.youtube.com/embed/mrHiZrtn5c0?si=Q_ctb7lLodKTBbSS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+                
+                <!-- Description and CTA are now centered underneath the video -->
+                <div class="text-center max-w-3xl mx-auto">
+                    <h1 class="text-3xl md:text-5xl font-bold text-white mb-4">Featured Video: GTI Anthem</h1>
+                    <p class="text-gray-300 mb-8 text-lg">Experience the sound of performance. Our latest featured video brings the energy right to your screen.</p>
                     <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="inline-block bg-red-600 text-white font-semibold py-3 px-8 rounded-lg hover:bg-red-700 transition duration-300">
                         WATCH NOW ON YOUTUBE
                     </a>
-                </div>
-                <div class="aspect-w-16 aspect-h-9 lg:col-span-2">
-                    <iframe class="w-full h-full rounded-lg shadow-2xl" src="https://www.youtube.com/embed/E3b_y5b00iE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </section>
 
         <!-- Latest Uploads Section -->
-        <section>
-            <h2 class="text-3xl font-bold text-gray-800 mb-8">Latest Uploads</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-                <!-- Video Card 1 -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
-                    <img src="https://placehold.co/600x400/000000/FFFFFF?text=GTI+Exhaust+Mod" alt="GTI Exhaust Mod" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="font-semibold text-lg">GTI Exhaust Mod</h3>
+        <div class="container mx-auto px-4 py-12">
+            <section>
+                <h2 class="text-3xl font-bold text-gray-800 mb-8">Latest Uploads</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Video Card 1 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                        <img src="https://placehold.co/600x400/000000/FFFFFF?text=GTI+Exhaust+Mod" alt="GTI Exhaust Mod" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400?text=Image+Not+Found';">
+                        <div class="p-6">
+                            <h3 class="font-semibold text-lg">GTI Exhaust Mod</h3>
+                        </div>
+                    </div>
+                    <!-- Video Card 2 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                        <img src="https://placehold.co/600x400/000000/FFFFFF?text=F1+Season" alt="F1 Season: Music GTI Inspired" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400?text=Image+Not+Found';">
+                        <div class="p-6">
+                            <h3 class="font-semibold text-lg">F1 Season: Music GTI Inspired</h3>
+                        </div>
+                    </div>
+                    <!-- Video Card 3 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                        <img src="https://placehold.co/600x400/000000/FFFFFF?text=Ultimate+Playlist" alt="Building The Ultimate Playlist" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400?text=Image+Not+Found';">
+                        <div class="p-6">
+                            <h3 class="font-semibold text-lg">Building The Ultimate Playlist</h3>
+                        </div>
+                    </div>
+                    <!-- Video Card 4 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                        <img src="https://placehold.co/600x400/000000/FFFFFF?text=Drums+Turbo" alt="Drums+Turbo=Yesss" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400?text=Image+Not+Found';">
+                        <div class="p-6">
+                            <h3 class="font-semibold text-lg">Drums+Turbo=Yesss</h3>
+                        </div>
                     </div>
                 </div>
-                <!-- Video Card 2 -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
-                    <img src="https://placehold.co/600x400/000000/FFFFFF?text=F1+Season" alt="F1 Season: Music GTI Inspired" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="font-semibold text-lg">F1 Season: Music GTI Inspired</h3>
-                    </div>
-                </div>
-                <!-- Video Card 3 -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
-                    <img src="https://placehold.co/600x400/000000/FFFFFF?text=Ultimate+Playlist" alt="Building The Ultimate Playlist" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="font-semibold text-lg">Building The Ultimate Playlist</h3>
-                    </div>
-                </div>
-                <!-- Video Card 4 -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
-                    <img src="https://placehold.co/600x400/000000/FFFFFF?text=Drums+Turbo" alt="Drums+Turbo=Yesss" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="font-semibold text-lg">Drums+Turbo=Yesss</h3>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
 
     <!-- Footer Section -->
-    <footer class="bg-black text-white mt-12">
+    <footer class="bg-black text-white">
         <div class="container mx-auto px-4 py-8">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center text-center md:text-left">
                 <!-- Quick Links -->
@@ -103,7 +112,7 @@
                 </div>
                 <!-- Copyright -->
                 <div class="text-center">
-                    <p>&copy; 2024 TUNED TEMPO. ALL TURKITS RESERVED.</p>
+                    <p>&copy; 2024 TUNED TEMPO. ALL RIGHTS RESERVED.</p>
                 </div>
                 <!-- Social Media Icons -->
                 <div class="flex justify-center md:justify-end space-x-4">
@@ -119,5 +128,4 @@
 
 </body>
 </html>
-
 
